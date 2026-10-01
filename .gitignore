@@ -1,0 +1,69 @@
+# =========================================================================
+# Spring Boot & Build Tools (Maven / Gradle)
+# =========================================================================
+# Maven build outputs
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+# Gradle build outputs
+.gradle/
+build/
+
+# Log files and databases
+*.log
+logs/
+*.swp
+*.db
+
+# =========================================================================
+# IDE Settings
+# =========================================================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse / Spring Tool Suite (STS)
+.metadata/
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
+
+# Visual Studio Code
+.vscode/
+
+# =========================================================================
+# Environment Variables & Sensitive Secrets (CRITICAL)
+# =========================================================================
+# Exclude local environment files containing credentials, tokens, or DB passwords
+.env
+.env.local
+*.properties.local
+*.yml.local
+
+# OPTIONAL: Un-comment the lines below if you keep production credentials 
+# in these files and rely on 'application-dev.properties' or environment variables instead.
+# application.properties
+# application.yml.local
+
+# =========================================================================
+# Operating System Files
+# =========================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
