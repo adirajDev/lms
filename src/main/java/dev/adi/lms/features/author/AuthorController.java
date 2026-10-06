@@ -40,7 +40,9 @@ public class AuthorController {
     public ResponseEntity<AuthorResponse> create(@Valid @RequestBody AuthorRequest req) {
         AuthorResponse created = authorService.create(req);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
-                .path("/{id}").buildAndExpand(created.id()).toUri();
+                .path("/{id}")
+                .buildAndExpand(created.id())
+                .toUri();
         return ResponseEntity.created(location).body(created);
     }
 
