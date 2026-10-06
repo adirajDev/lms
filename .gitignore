@@ -18,6 +18,7 @@ logs/
 *.swp
 *.db
 
+
 # =========================================================================
 # IDE Settings
 # =========================================================================
@@ -52,7 +53,8 @@ out/
 # OPTIONAL: Un-comment the lines below if you keep production credentials 
 # in these files and rely on 'application-dev.properties' or environment variables instead.
 # application.properties
-# application.yml.local
+# application-local.yml
+application.yml
 
 # =========================================================================
 # Operating System Files
