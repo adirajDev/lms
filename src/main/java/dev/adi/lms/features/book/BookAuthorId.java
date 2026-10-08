@@ -8,26 +8,22 @@ import java.util.Objects;
 
 @Embeddable
 public class BookAuthorId implements Serializable {
+
     @Column(name = "book_id")
-    private String bookId;
+    private Long bookId;
 
     @Column(name = "author_id")
-    private String authorId;
+    private Long authorId;
 
     protected BookAuthorId() {}
 
-    public BookAuthorId(String bookId, String authorId) {
+    public BookAuthorId(Long bookId, Long authorId) {
         this.bookId = bookId;
         this.authorId = authorId;
     }
 
-    public String getBookId() {
-        return bookId;
-    }
-
-    public String getAuthorId() {
-        return authorId;
-    }
+    public Long getBookId()   { return bookId; }
+    public Long getAuthorId() { return authorId; }
 
     @Override
     public boolean equals(Object o) {
@@ -38,5 +34,5 @@ public class BookAuthorId implements Serializable {
     }
 
     @Override
-    public int hashCode() {return Objects.hash(bookId, authorId);}
+    public int hashCode() { return Objects.hash(bookId, authorId); }
 }
